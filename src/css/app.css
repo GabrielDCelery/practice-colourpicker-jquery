@@ -1,0 +1,96 @@
+body {
+	display: block;
+	margin: 10px auto 0;
+	width: 90%;
+	max-width: 1440px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/******************************************************************
+NAVBAR
+******************************************************************/
+
+nav {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.navButtons {
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.navButtons li {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-color: #181E20;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+.navButtons li:hover {
+	background-color: #3F5056;
+}
+
+/******************************************************************
+COLOUR BOXES
+******************************************************************/
+main {
+	margin-top: 60px;
+}
+
+.colourBox {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px 0;
+	border-radius: 5px;
+	border: solid #181E20 3px; 
+}
+
+.baseColourValues,
+.tintColourValues {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.baseColour,
+.tintColour {
+	height: 50px;
+}
+
+.baseColour,
+.baseColourValues {
+	flex-basis: 40%;
+}
+
+.tintColour,
+.tintColourValues {
+	flex-basis: 15%;
+}
+
+.baseColourValues,
+.tintColourValues {
+	background-color: #181E20;
+}
+
+.baseColourValues p,
+.tintColourValues p {
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 14px;
+	border: solid #fff 1px; 
+	color: #fff;
+	background-color: #181E20;
+}

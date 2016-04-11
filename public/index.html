@@ -2,10 +2,51 @@
 <html>
 <head>
 	<title>JQuery Colour Picker</title>
+	<link rel="stylesheet" type="text/css" href="lib/normalize-css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/app.min.css">
 </head>
 <body>
 
+	<nav>
+		<ul class="navButtons">
+			<li>GET BASE COLOURS</li>
+			<li>GET EXTENDED COLOURS</li>
+			<li>ADD NEW COLOUR</li>
+			<li>DUPLICATE EXISTING COLOUR</li>
+		</ul>
+	</nav>
+
+	<main>
+		<ul>
+			<li id="Red" class="colourBox">
+				<div class="baseColour" style="background-color: rgba(120,0,0,1);"></div>
+				<div class="tintColour" style="background-color: rgba(110,0,0,1);"></div>
+				<div class="tintColour" style="background-color: rgba(120,0,0,1);"></div>
+				<div class="tintColour" style="background-color: rgba(160,0,0,1);"></div>
+				<div class="tintColour" style="background-color: rgba(200,0,0,1);"></div>
+				<div class="baseColourValues">
+					<p class="rgbaValue">120,0,0,1</p>
+					<p class="hexValue">#780000</p>
+				</div>
+				<div class="tintColourValues">
+					<p class="rgbaValue">110,0,0,1</p>
+					<p class="hexValue">#6E0000</p>
+				</div>
+				<div class="tintColourValues">
+					<p class="rgbaValue">120,0,0,1</p>
+					<p class="hexValue">#780000</p>
+				</div>
+				<div class="tintColourValues">
+					<p class="rgbaValue">160,0,0,1</p>
+					<p class="hexValue">#960000</p>
+				</div>
+				<div class="tintColourValues">
+					<p class="rgbaValue">200,0,0,1</p>
+					<p class="hexValue">#C80000</p>
+				</div>
+			</li>
+		</ul>
+	</main>
 
 	<script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="js/app.min.js"></script>
