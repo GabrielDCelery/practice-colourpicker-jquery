@@ -3,6 +3,7 @@ body {
 	margin: 10px auto 0;
 	width: 90%;
 	max-width: 1440px;
+	overflow-y: scroll;
 }
 
 ul {
@@ -50,7 +51,7 @@ main {
 	margin-top: 60px;
 }
 
-.colourBox {
+.monochromatic {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 20px 0;
@@ -70,14 +71,20 @@ main {
 	height: 50px;
 }
 
+.colourBox,
+.colourValueBox {
+	display: flex;
+	width: 100%;
+}
+
 .baseColour,
 .baseColourValues {
-	flex-basis: 40%;
+	flex-grow: 4
 }
 
 .tintColour,
 .tintColourValues {
-	flex-basis: 15%;
+	flex-grow: 1;
 }
 
 .baseColourValues,

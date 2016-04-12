@@ -31,8 +31,10 @@ JAVASCRIPT
 gulp.task('concatJs', function(){
 	return gulp.src(
 		[
-			'./src/js/app.js',
-			'./src/js/get_colour_palette.js'
+			'./src/js/database/get_palettes_from_api.js',
+			'./src/js/model/manipulate_colour.js',
+			'./src/js/view/create_html.js',
+			'./src/js/view/render_view.js'
 		]
 	)
 	.pipe(concat('app.js'))
@@ -52,7 +54,7 @@ WATCH
 
 gulp.task('watch', function(){
 	gulp.watch('./src/css/**/*.css', ['minifyCss']);
-	gulp.watch('./src/js/**/*.js', ['concatJs']);
+	gulp.watch('./src/js/**/*.js', ['minifyJs']);
 });
 
 /********************************************************************************
